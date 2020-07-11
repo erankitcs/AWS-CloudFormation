@@ -19,7 +19,7 @@ This project is aim to learn core and advanced components of AWS CloudFormation.
 - Role for CloudFormation Stack.
 - Customer role for Users to update and delete stack.
 - Google Authentication Setup (Manual). Create an API for Google Authentication.
-- AWS Congnito Setup(Manual)- To be automated.
+- AWS Congnito Setup(Manual)- Create an Identity Pool and add Authentication with Google+. Add created Role from template. To be automated.
 - Support html setup and upload into S3.
 - Self Service html setup and upload into S3.
 - Upload Wordpress CFN template into S3 Bucket.
