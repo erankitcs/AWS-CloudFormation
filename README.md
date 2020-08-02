@@ -24,6 +24,6 @@ This project is aim to learn core and advanced components of AWS CloudFormation.
 - Self Service html setup and upload into S3.
 - Upload Wordpress CFN template into S3 Bucket.
 ### Architecture
-![Screenshot](WPSelfService.png)
+![Screenshot](Arch-WPSelfService.png)
 ### Website Demo
-![Screenshot](WPSeflServeWebsiteDemo.gif)
+![Screenshot](WP-SeflServeWebsiteDemo.gif)
