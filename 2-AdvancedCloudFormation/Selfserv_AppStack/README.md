@@ -8,7 +8,7 @@ In this project, We solved three problems
 - Manual inputs for the Subnets CIDR range for application stack. => Solved by using CustomResource in cfn which uses a Lambda with DynamoDB to generate valid CIDR range automatically during stack creation.
 
 ### Architecture
-![Screenshot](/AWS-CloudFormation/SelfSerApp.jpeg)
+![Screenshot](/SelfSerApp.jpeg)
 
 ### Website Demo
-![Screenshot](/AWS-CloudFormation/SelfServApp.gif)
+![Screenshot](/SelfServApp.gif)
