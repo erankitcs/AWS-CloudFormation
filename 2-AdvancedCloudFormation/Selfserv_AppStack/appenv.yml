@@ -149,6 +149,16 @@ Resources:
               mode: "000400"
               owner: root
               group: root
+            /etc/cfn/cfn-hup.conf:
+              content: !Sub |
+                [main]
+                stack=${AWS::StackId}
+                region=${AWS::Region}
+                verbose=true
+                interval=5
+              mode: "000400"
+              owner: root
+              group: root
           services:
             sysvinit:
               cfn-hup:
@@ -246,8 +256,8 @@ Resources:
         - !Ref SubnetPublicA
         - !Ref SubnetPublicB
       SecurityGroups:
-        - !Ref RG
-  RG:
+        - !Ref SG
+  SG:
     Type: "AWS::EC2::SecurityGroup"
     Properties:
       GroupDescription: !Join ["", ["Stack ", !Ref "AWS::StackId", " Application V", !Ref APPVERSION, " - ", !Ref ENVIRONMENT]]

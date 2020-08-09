@@ -27,3 +27,12 @@ This project is aim to learn core and advanced components of AWS CloudFormation.
 ![Screenshot](Arch-WPSelfService.png)
 ### Website Demo
 ![Screenshot](WP-SeflServeWebsiteDemo.gif)
+
+## Self Service App
+This project is based on the concept of self service portal for Developers, Testers and PreSales guys who wants their infrasture available on demand.
+
+### Architecture
+![Screenshot](SelfSerApp.jpeg)
+
+### Website Demo
+![Screenshot](SelfServApp.gif)

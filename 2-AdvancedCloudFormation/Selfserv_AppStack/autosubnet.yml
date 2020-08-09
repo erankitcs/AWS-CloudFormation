@@ -6,10 +6,10 @@ Resources:
       AttributeDefinitions:
         -
           AttributeName: "Cidr"
-          AttributType: "S"
+          AttributeType: "S"
         -
           AttributeName: "StackId"
-          AttributType: "S"
+          AttributeType: "S"
       KeySchema:
         -
           AttributeName: "Cidr"
@@ -33,7 +33,7 @@ Resources:
     Type: "AWS::IAM::Role"
     Properties:
       AssumeRolePolicyDocument:
-        Version: "2010-10-17"
+        Version: 2012-10-17
         Statement:
           -
             Effect: Allow
@@ -75,7 +75,7 @@ Resources:
       Role: !GetAtt IAMRole.Arn
       Code:
         S3Bucket: !ImportValue sharedinf-lambdabucketname
-         S3Key: autosubnet.zip
+        S3Key: autosubnet.zip
       Handler: autosubnet.handler
       Runtime: "python2.7"
       Timeout: "300"
@@ -90,4 +90,4 @@ Outputs:
     Description: Table Name of AutoSubnet DDB Table
     Value: !Ref AutoSubnetTable
     Export:
-      Name: sharedinf-autosubnetddbtablename      
+      Name: sharedinf-autosubnetddbtablename
